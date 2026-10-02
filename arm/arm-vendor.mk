@@ -12,9 +12,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_IS_GROUPER),)
 PRODUCT_PACKAGES += \
     SetupWizard \
-    SpeechServicesByGoogle \
-    Velvet \
-    talkback
+    SpeechServicesByGoogle
 endif
 
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)

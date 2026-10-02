@@ -5,8 +5,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 PRODUCT_PACKAGES += \
-    AndroidAutoStub \
-    FamilyLinkParentalControls \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
     GoogleFeedback \
@@ -31,9 +29,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_IS_GROUPER),)
 PRODUCT_PACKAGES += \
-    GoogleRestore \
-    Wellbeing \
-    wellbeing.xml
+    GoogleRestore
 endif
 
 PRODUCT_SOONG_NAMESPACES += \

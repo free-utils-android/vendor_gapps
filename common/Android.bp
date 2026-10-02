@@ -4,32 +4,6 @@ soong_namespace {
 }
 
 android_app_import {
-    name: "AndroidAutoStub",
-    owner: "gapps",
-    apk: "proprietary/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
-    name: "FamilyLinkParentalControls",
-    owner: "gapps",
-    apk: "proprietary/product/priv-app/FamilyLinkParentalControls/FamilyLinkParentalControls.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
-android_app_import {
     name: "GoogleCalendarSyncAdapter",
     owner: "gapps",
     apk: "proprietary/product/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk",
@@ -114,19 +88,6 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
-    product_specific: true,
-}
-
-android_app_import {
-    name: "Wellbeing",
-    owner: "gapps",
-    apk: "proprietary/product/priv-app/Wellbeing/Wellbeing.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
     product_specific: true,
 }
 
@@ -228,14 +189,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "sysconfig-mtg.xml",
     src: "proprietary/product/etc/sysconfig/sysconfig-mtg.xml",
-    relative_install_path: "sysconfig",
-    filename_from_src: true,
-    product_specific: true,
-}
-
-prebuilt_etc {
-    name: "wellbeing.xml",
-    src: "proprietary/product/etc/sysconfig/wellbeing.xml",
     relative_install_path: "sysconfig",
     filename_from_src: true,
     product_specific: true,
